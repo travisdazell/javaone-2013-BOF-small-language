@@ -1,0 +1,34 @@
+// an example of a function that returns a value
+func subtractNumbers( x, y, z )
+	return x - y - z
+endfunc
+
+// an example of a function that doesn't return anything
+func doSomething()
+	println 100
+endfunc
+
+// main program routine
+main:
+	var a = 10
+	var b = 20
+	
+	if (a > b) then
+		loop 3 times
+			var d = subtractNumbers( x = 10, y = 5, z = 3 )
+			println d
+		endloop
+	else
+		if (b > 0) then
+			loop 2 times
+				println b
+			endloop
+		endif
+	endif
+	
+	println 4
+	
+	doSomething()
+	
+	println 1
+	println 2
